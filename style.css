@@ -1,56 +1,116 @@
+/* Global styles */
 * {
     margin: 20px;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Caveat", serif;
     font-size: 40px;
     font-weight: 600;
     font-style: normal;
     border: 5px solid;
-    color:black;
+    color: black;
 }
-.p1{
+
+.p1 {
     background-image: url(./pattern1.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.p2{
+
+.p2 {
     background-image: url(./indian.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.p3{
+
+.p3 {
     background-image: url(./pattern3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#head{
+#head {
     border-bottom: 1px solid black;
 }
-#topic{
+
+#topic {
     font-weight: 800;
     border-bottom: 1px solid white;
 }
-.intro{
-    display : flex;
+
+.intro {
+    display: flex;
     justify-content: center;
 }
-.div{
+
+.div {
     background-image: none;
     border-radius: 10px;
 }
-.h3{
+
+.h3 {
     font-weight: 1000;
 }
+
 th, td {
     text-align: center; /* Center-aligns text in all th and td cells */
 }
-table{
-    margin-left: 80px
+
+table {
+    margin-left: 80px;
 }
-  
+
+/* Responsive Design */
+
+/* Small screens (max width 600px) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 20px;
+        border: none;
+    }
+    .p1, .p2, .p3 {
+        background-size: contain; /* Ensures images fit smaller screens */
+    }
+    .intro {
+        flex-direction: column; /* Stacks items vertically */
+    }
+    table {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    #topic {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/* Medium screens (max width 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 30px;
+    }
+    .p1, .p2, .p3 {
+        background-position: top;
+    }
+    .intro {
+        justify-content: flex-start;
+    }
+    table {
+        margin-left: 40px;
+    }
+}
+
+/* Large screens (min width 1024px) */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 50px;
+    }
+    table {
+        margin-left: 100px;
+    }
+}
