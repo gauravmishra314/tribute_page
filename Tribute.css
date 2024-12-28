@@ -1,0 +1,56 @@
+* {
+    margin: 20px;
+    padding: 0;
+}
+body{
+    font-family: "Caveat", serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+    border: 5px solid;
+    color:black;
+}
+.p1{
+    background-image: url(./pattern1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.p2{
+    background-image: url(./indian\ .jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.p3{
+    background-image: url(./pattern3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#head{
+    border-bottom: 1px solid black;
+}
+#topic{
+    font-weight: 800;
+    border-bottom: 1px solid white;
+}
+.intro{
+    display : flex;
+    justify-content: center;
+}
+.div{
+    background-image: none;
+    border-radius: 10px;
+}
+.h3{
+    font-weight: 1000;
+}
+th, td {
+    text-align: center; /* Center-aligns text in all th and td cells */
+}
+table{
+    margin-left: 80px
+}
+  
